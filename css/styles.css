@@ -386,6 +386,8 @@ p {
 
 /* ===== Hero section ===== */
 .hero {
+  max-width: 320px;
+  min-height: 432px;
   background-color: #2e2f42;
   padding: 72px 0;
   margin-left: auto;
@@ -394,7 +396,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/hero-background-img.jpg');
+    url('../images/hero-bg-mobl.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -416,9 +418,26 @@ p {
   padding: 16px 32px;
 }
 
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg-mobl@2x.jpg');
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
+    min-height: 436px;
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg-tabl.jpg');
   }
 
   .main-title {
@@ -429,10 +448,26 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg-tabl@2x.jpg');
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
+    min-height: 600px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg-desk.jpg');
   }
 
   .main-title {
@@ -443,6 +478,15 @@ p {
   }
 }
 
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg-desk@2x.jpg');
+  }
+}
 /* ===== Our advantages ===== */
 .advantages-list {
   display: flex;
